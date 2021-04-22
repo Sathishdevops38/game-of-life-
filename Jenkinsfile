@@ -20,7 +20,7 @@ pipeline{
           stage('UnitTest'){
               agent{label 'linux_slave'}
               steps{
-                  git 'https://github.com/devops-trainer/game-of-life.git'
+                  git 'https://github.com/Sathishdevops38/game-of-life-.git'
                   sh 'mvn test'
               }
               post{
