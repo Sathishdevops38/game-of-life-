@@ -18,6 +18,7 @@ pipeline{
               }
           }
           stage('UnitTest'){
+              agent{label 'linux_slave'}
                 steps{
                   git 'https://github.com/Sathishdevops38/game-of-life-.git'
                   sh 'mvn test'
