@@ -1,14 +1,14 @@
 pipeline{
     tools{
-        jdk 'myjava'
-        maven 'mymaven'
+        jdk 'JAVA_HOME'
+        maven 'M2_HOME'
     }
     agent none
       stages{
           stage('Checkout'){
               agent any
               steps{
-                  git 'https://github.com/devops-trainer/game-of-life.git'
+                  git 'https://github.com/Sathishdevops38/game-of-life-.git'
               }
           }
           stage('Compile'){
